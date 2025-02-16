@@ -1,0 +1,65 @@
+[gd_scene load_steps=3 format=3 uid="uid://clrt42jhskjmm"]
+
+[ext_resource type="Script" path="res://button.gd" id="1_48w07"]
+[ext_resource type="Script" path="res://button_2.gd" id="2_t5pnh"]
+
+[node name="Control" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Panel" type="Panel" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Label" type="Label" parent="Panel"]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -69.5
+offset_top = 28.0
+offset_right = 69.5
+offset_bottom = 85.0
+grow_horizontal = 2
+theme_type_variation = &"HeaderLarge"
+text = "Tic Tac Toe"
+
+[node name="Button" type="Button" parent="Panel"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -95.5
+offset_top = -19.5
+offset_right = 95.5
+offset_bottom = 19.5
+grow_horizontal = 2
+grow_vertical = 2
+text = "Neue Partie"
+script = ExtResource("1_48w07")
+
+[node name="Button2" type="Button" parent="Panel"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -95.5
+offset_top = 28.5
+offset_right = 95.5
+offset_bottom = 67.5
+grow_horizontal = 2
+grow_vertical = 2
+text = "Neue Giant Partie"
+script = ExtResource("2_t5pnh")
